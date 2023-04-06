@@ -1,0 +1,66 @@
+.asside-nav {
+    background-color: $secondary-background;
+    padding: 0;
+    height: 100%;
+    a {
+        display: inline-block;
+        padding: 1rem;
+        border-bottom: 1px solid $brand-primary;
+        transition: .25s ease-in-out;
+        &:hover,:focus,::selection {
+            background-color: $brand-primary;
+            color: $secondary-text;
+        } 
+        @media all and (min-width: 960px) {
+            display: block;
+        }
+    }
+}
+
+.environment-menu {
+    label {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 2.5rem;
+        .radio-button {
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.fake-nav {
+    background-color: $secondary-background;
+    height: 100%;
+}
+
+.submit-form {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid $primary-interactive;
+    margin: 1rem 0;
+    h2 {
+        font-family: $asap-font;
+    }
+    #payment-method {
+        margin: 1rem 0;
+    }
+}
+
+.results {
+    background-color: $tertiary-background;
+    padding: 0.5rem;
+    height: 95%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    h1 {
+        color: $secondary-text;
+    }
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: none;
+    }
+}

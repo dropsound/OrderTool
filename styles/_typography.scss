@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Asap-regular';
+    src: 
+    url(../assets/fonts/Asap-Regular.ttf) format("truetype"),
+    url(../assets/fonts/asap-regular.woff) format("woff"),
+    url(../assets/fonts/asap-regular.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: 'Asap-Semi-bold';
+    src: 
+    url(../assets/fonts/Asap-SemiBold.ttf) format("truetype"),
+    url(../assets/fonts/asap-semibold.woff) format("woff"),
+    url(../assets/fonts/asap-semibold.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: 'Asap-Semi-bold-italic';
+    src: 
+    url(../assets/fonts/Asap-SemiBoldItalic.ttf) format("truetype"),
+    url(../assets/fonts/asap-semibolditalic.woff) format("woff"),
+    url(../assets/fonts/asap-semibolditalic.woff2) format("woff2")
+}
+
+a {
+    color: $primary-interactive;
+}
+
+h1 {
+    margin: 1rem 0;
+    color: $tertiary-text;
+}
+h2 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: $tertiary-text;
+}

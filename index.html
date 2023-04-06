@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Order Tool</title>
+</head>
+<body>
+    <header>
+        <div class="grid-container">
+            <img src="./assets/images/Svea Logo.svg" alt="Svea Logo">
+        </div>
+    </header>
+    <main>
+        <div class="grid-container">
+            <nav class="asside-nav">
+                <a href="">Create order</a>
+                <a href="">Handle order</a>
+            </nav>
+            <section>
+                <form class="environment-menu">
+                    <h1>Select environment</h1>
+                    <label for="#1"><input type="radio" class="radio-button" id="1" name="1" value="DEV">DEV</label>
+                    <label for="#2"><input type="radio" class="radio-button" id="2" name="1" value="TEST">TEST</label>
+                    <label for="#3"><input type="radio" class="radio-button" id="3" name="1" value="UAT">UAT</label>
+                </form>
+                <form class="integrators">
+                    <h1>Choose integrator</h1>
+                    <label for="integrators"></label>
+                    <select name="Integrators" id="integrators">
+                        <option value="INT 1">Choose integrator</option>
+                        <option value="INT 2">INT 1</option>
+                        <option value="INT 3">INT 1</option>
+                        <option value="INT 4">INT 1</option>
+                        <option value="INT 5">INT 1</option>
+                    </select>
+                </form>
+                <form class="clients">
+                    <h1>Choose client</h1>
+                    <label for="clients"></label>
+                    <select name="Integrators" id="clients">
+                        <option value="INT 1">Choose client</option>
+                        <option value="INT 2">cli 1</option>
+                        <option value="INT 3">cli 1</option>
+                        <option value="INT 4">IcliNT 1</option>
+                        <option value="INT 5">cli 1</option>
+                    </select>
+                </form>
+            </section>
+        </div>
+        <div class="grid-container">
+            <div class="fake-nav"></div>
+            <section>
+                <form action="" class="submit-form">
+                    <p>Amount</p>
+                    <input type="text">
+                    <h2>Order info</h2>
+                    <input type="text">
+                    <h2>Phone number</h2>
+                    <input type="text">
+                    <h2>SSN</h2>
+                    <input type="text">
+                    <label for="payment-method"></label>
+                        <select name="Payment method" id="payment-method">
+                            <option value="INT 1">Choose payment method</option>
+                            <option value="INT 2">cli 1</option>
+                            <option value="INT 3">cli 1</option>
+                            <option value="INT 4">IcliNT 1</option>
+                            <option value="INT 5">cli 1</option>
+                        </select>
+                    <button>Submit</button>
+                </form>
+            </section>
+            <section>
+                <div class="results">
+                    <h1>Results</h1>
+                    <textarea name="" id="">{}</textarea>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        made in <span><img src="./assets/images/serbia.png" alt="" width="16px"></span>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+//-----RADIO BUTTON-----//
+
+input[type="radio"] {
+    margin: 0;
+    background: $primary-background;
+    border: 2px solid $primary-interactive;
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.radio-button{
+    background: $primary-background;
+    border: 2px solid $primary-interactive;
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.radio-button:checked,
+.radio-button:visited,
+.radio-button:active,
+.radio-button:checked:focus,
+.radio-button::selection {
+    background: $primary-background;
+    border: 1px solid $primary-interactive;
+}
+
+//-----SELECT------//
+
+select {
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid $primary-interactive;
+}
+
+//-----INPUT-----//
+
+input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid $primary-interactive;
+    width: -webkit-fill-available;
+}
+
+//-----BUTTONS-----//
+
+button {
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: $primary-interactive;
+    color: $secondary-text;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+//-----BACKGROUND-----//
+$primary-background:   #ffffff;
+$secondary-background: #E8F6F9;
+$tertiary-background:  #00325C;
+
+
+//-----TEXT-----//
+$primary-text:   #434343;
+$secondary-text: #ffffff;
+$tertiary-text:  #00325c;
+
+
+//-----INTERACTIVE------//
+$primary-interactive: #00699A;
+
+$brand-primary: #00aece;
+
+//-----FONTS-----//
+@import './typography';
+
+$asap-font: 'Asap-Regular';
+$asap-font-semi-bold: 'Asap-Semi-bold', sans-serif;
+$asap-semi-bold-italic: 'Asap-Semi-bold-italic', sans-serif;

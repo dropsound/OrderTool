@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Asap-regular";
+  src: url(../assets/fonts/Asap-Regular.ttf) format("truetype"), url(../assets/fonts/asap-regular.woff) format("woff"), url(../assets/fonts/asap-regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Asap-Semi-bold";
+  src: url(../assets/fonts/Asap-SemiBold.ttf) format("truetype"), url(../assets/fonts/asap-semibold.woff) format("woff"), url(../assets/fonts/asap-semibold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Asap-Semi-bold-italic";
+  src: url(../assets/fonts/Asap-SemiBoldItalic.ttf) format("truetype"), url(../assets/fonts/asap-semibolditalic.woff) format("woff"), url(../assets/fonts/asap-semibolditalic.woff2) format("woff2");
+}
+a {
+  color: #00699A;
+}
+
+h1 {
+  margin: 1rem 0;
+  color: #00325c;
+}
+
+h2 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #00325c;
+}
+
+header {
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+@media all and (min-width: 960px) {
+  header {
+    padding: 0.5rem 0;
+  }
+}
+
+.grid-container {
+  max-width: 1140px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  overflow: hidden;
+}
+@media all and (min-width: 960px) {
+  .grid-container {
+    grid-template-columns: 0.5fr 1fr 1fr;
+  }
+}
+@media all and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 0.5fr 1fr 1fr;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #00aece;
+  font-size: 75%;
+}
+
+input[type=radio] {
+  margin: 0;
+  background: #ffffff;
+  border: 2px solid #00699A;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.radio-button {
+  background: #ffffff;
+  border: 2px solid #00699A;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.radio-button::-moz-selection {
+  background: #ffffff;
+  border: 1px solid #00699A;
+}
+
+.radio-button:checked,
+.radio-button:visited,
+.radio-button:active,
+.radio-button:checked:focus,
+.radio-button::selection {
+  background: #ffffff;
+  border: 1px solid #00699A;
+}
+
+select {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #00699A;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #00699A;
+  width: -webkit-fill-available;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: #00699A;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Asap-Regular";
+  color: #434343;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  font-family: "Asap-Semi-bold", sans-serif;
+}
+
+h2 {
+  font-family: "Asap-Regular";
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 0 1rem;
+}
+@media all and (min-width: 960px) {
+  section {
+    padding: 0 0;
+  }
+}
+
+.asside-nav {
+  background-color: #E8F6F9;
+  padding: 0;
+  height: 100%;
+}
+.asside-nav a {
+  display: inline-block;
+  padding: 1rem;
+  border-bottom: 1px solid #00aece;
+  transition: 0.25s ease-in-out;
+}
+.asside-nav a ::-moz-selection {
+  background-color: #00aece;
+  color: #ffffff;
+}
+.asside-nav a:hover, .asside-nav a :focus, .asside-nav a ::selection {
+  background-color: #00aece;
+  color: #ffffff;
+}
+@media all and (min-width: 960px) {
+  .asside-nav a {
+    display: block;
+  }
+}
+
+.environment-menu label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+.environment-menu label .radio-button {
+  margin-right: 0.5rem;
+}
+
+.fake-nav {
+  background-color: #E8F6F9;
+  height: 100%;
+}
+
+.submit-form {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #00699A;
+  margin: 1rem 0;
+}
+.submit-form h2 {
+  font-family: "Asap-Regular";
+}
+.submit-form #payment-method {
+  margin: 1rem 0;
+}
+
+.results {
+  background-color: #00325C;
+  padding: 0.5rem;
+  height: 95%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.results h1 {
+  color: #ffffff;
+}
+.results textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
