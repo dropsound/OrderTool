@@ -28,7 +28,7 @@ input[type="radio"] {
 .radio-button:checked:focus,
 .radio-button::selection {
     background: $primary-background;
-    border: 1px solid $primary-interactive;
+    border: 2px solid $primary-interactive;
 }
 
 //-----SELECT------//
@@ -58,4 +58,47 @@ button {
     color: $secondary-text;
     border: none;
     cursor: pointer;
+    min-width: 80px;
 }
+
+
+:root {
+    --form-control-color: $primary-interactive;
+  }
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+  
+    font: inherit;
+    color: $primary-text;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid $primary-interactive;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em $primary-interactive;
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }

@@ -18,7 +18,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
 }
 
@@ -70,6 +69,7 @@ a {
 h1 {
   margin: 1rem 0;
   color: #00325c;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -140,7 +140,7 @@ input[type=radio] {
 
 .radio-button::-moz-selection {
   background: #ffffff;
-  border: 1px solid #00699A;
+  border: 2px solid #00699A;
 }
 
 .radio-button:checked,
@@ -149,7 +149,7 @@ input[type=radio] {
 .radio-button:checked:focus,
 .radio-button::selection {
   background: #ffffff;
-  border: 1px solid #00699A;
+  border: 2px solid #00699A;
 }
 
 select {
@@ -173,6 +173,48 @@ button {
   color: #ffffff;
   border: none;
   cursor: pointer;
+  min-width: 80px;
+}
+
+:root {
+  --form-control-color: $primary-interactive;
+}
+
+input[type=radio] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  -moz-appearance: none;
+       appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: #434343;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #00699A;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=radio]::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #00699A;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type=radio]:checked::before {
+  transform: scale(1);
 }
 
 html {
